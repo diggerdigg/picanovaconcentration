@@ -1,0 +1,19 @@
+.footer {
+    background: rgb(172, 172, 218);
+    display: inline-flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 42px;
+    line-height: 42px;
+
+    .copyright {
+        flex: 4;
+        font-size: 12px;
+    }
+
+    .version {
+        flex: 2;
+    }
+}

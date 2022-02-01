@@ -1,0 +1,38 @@
+.card {
+    img {
+        max-height: 55px;
+        max-width: 55px;
+
+        @media (min-width: 768px) {
+            max-height: 90px;
+            max-width: 90px;
+        }
+    }
+
+    .front {
+        position: absolute;
+        transition: all ease-in 0.2s;
+        transform: rotateY(90deg);
+    }
+
+    .back {
+        transition: all ease-in 0.2s;
+        transition-delay: 0.2s;
+    }
+
+    .visible {
+        .front {
+            transition-delay: 0.2s;
+            transform: rotateY(0deg);
+        }
+
+        .back {
+            transform: rotateY(90deg);
+            transition-delay: 0s;
+        }
+    }
+
+    .removed {
+        display: none;
+    }
+}
